@@ -31,21 +31,18 @@ public class Cat {
 	 * is not taken by another cat! This is probably something that we would fix in
 	 * a production system.
 	 * 
-	 * @param id - the id number of this cat
-	 * @param name - the name of this Cat
+	 * @param int    id - the id number of this cat
+	 * @param String name - the name of this Cat
 	 */
 
 	public Cat(int id, String name) {
-		if (bugInjectionOn) {
-			throw new UnsupportedOperationException("Injected bug for constructor");
-		}
-		rented = false;
+		this.rented = false;
 		this.id = id;
 		this.name = name;
 	}
 
 	/**
-	 * Rent cat. Simply sets the rented flag to true.
+	 * Rent cat. Simply sets the _rented flag to true.
 	 */
 
 	public void rentCat() {
@@ -56,7 +53,7 @@ public class Cat {
 	}
 
 	/**
-	 * Return cat. Simply sets the rented flag to false.
+	 * Return cat. Simply sets the _rented flag to false.
 	 */
 
 	public void returnCat() {
@@ -67,7 +64,7 @@ public class Cat {
 	}
 
 	/**
-	 * Accessor for name variable. Returns the name of this cat.
+	 * Accessor for _name variable. Returns the name of this cat.
 	 * 
 	 * @return String name of cat
 	 */
@@ -80,7 +77,7 @@ public class Cat {
 	}
 
 	/**
-	 * Accessor for id variable. Returns the ID of this cat.
+	 * Accessor for _id variable. Returns the ID of this cat.
 	 * 
 	 * @return int ID of this cat
 	 */
@@ -93,7 +90,7 @@ public class Cat {
 	}
 
 	/**
-	 * Accessor for rented variable. Returns if cat is rented.
+	 * Accessor for _rented variable. Returns if cat is rented.
 	 * 
 	 * @return boolean - true if rented, false otherwise
 	 */
