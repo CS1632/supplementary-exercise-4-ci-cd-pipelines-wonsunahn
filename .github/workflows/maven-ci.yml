@@ -33,7 +33,7 @@ jobs:
       with:
         java-version: 17
         distribution: 'zulu' # Alternative distribution options are available.
-        cache: maven
+        # cache: maven
 
     - name: Test with Maven
       run: mvn test
